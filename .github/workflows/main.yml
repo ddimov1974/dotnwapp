@@ -12,8 +12,8 @@ jobs:
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         env:
-            GITHUB_TOKEN: ${{ secrets.git_test-son }}
-            SONAR_TOKEN: ${{ secrets.Test }}
+            GITHUB_TOKEN: ${{ secrets.GIT_TEST_SON }}
+            SONAR_TOKEN: ${{ secrets.TEST }}
         with:
           args: >
               -Dsonar.organization=rekhugopal
